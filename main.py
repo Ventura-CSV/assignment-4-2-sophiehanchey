@@ -7,10 +7,8 @@ def main():
     result.append(a2)
     
     for i in range(N-2):
-        a3 = a1 + a2
-        result.append(a3)
-        a1 = a2
-        a2 = a3
+        result.append(result[-1] + result[-2])
+
         
     print(result)
 
